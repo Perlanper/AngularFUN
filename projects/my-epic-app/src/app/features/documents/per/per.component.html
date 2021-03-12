@@ -1,0 +1,26 @@
+
+<div buttondiv> 
+<button class = "buttonCV" (click)="HandleClickCV()">Show CV</button>
+<button class = "buttonPL" (click)="HandleClickPL()">Show Personal Letter</button>
+</div>
+<div class = "gallery">
+    <figure id = "buttonCVcontent" >
+        <div *ngIf="clickedCV">
+            <iframe src="../../../assets/Documents/PerLandströmCV2020.pdf#toolbar=0" class="gallery_item">
+            </iframe>
+        </div>
+    </figure>
+    <figure id = "buttonPLcontent">
+        <div *ngIf="clickedPL">
+            <iframe src="../../../assets/Documents/Per Landström Personligt Brev.pdf#toolbar=0" class="gallery_item">
+        </iframe>
+    </div>
+    </figure>
+
+
+
+
+
+</div>
+
+<!--comment-->
